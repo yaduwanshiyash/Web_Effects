@@ -1,0 +1,94 @@
+@font-face {
+    font-family: migra;
+    src: url(./PPMigra-Regular.fb0ee287.ttf);
+}
+@font-face {
+    font-family: sharp ;
+    src: url(./SharpGrotesk-Bold.164b198a.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+#center{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    /* background-color: red; */
+}
+
+.imagediv{
+    position: absolute;
+    height: 400px;
+    width: 400px;
+    /* background-color: yellowgreen; */
+    position: absolute;
+    overflow: hidden;
+    
+}
+
+.imagediv img{
+    position: absolute;
+   top: 10%;
+   left: 10%;
+    height: 220px;
+    width: 180px;
+    object-fit: cover;
+    /* transform: translateY(100%); */
+    animation-name: anime;
+    animation-duration: 2s;
+    /* animation-delay: 0.5s; */
+    
+}
+
+@keyframes anime {
+    0%{
+        transform: translateY(100%);
+    }
+    50%{
+    transform: translateY(0%);
+    /* transform: rotate(340deg); */
+
+    }
+    100%{
+        /* transform: rotate(340deg); */
+        animation-delay: 1s;
+
+        transform: translateY(100%);
+    }
+}
+
+#mid{
+    height: 100%;
+    width: 100%;
+    padding: 10vw 15vw;
+    background-color: cadetblue;
+    z-index: -1;
+    position: absolute;
+    background-color: #E7E4E5;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-transform: uppercase;
+}
+h1{
+    font-size: 8vw;
+    font-family: migra;
+    text-align: center;
+    font-weight: 500;
+}
+span{
+    font-family: sharp;
+}
+
+
