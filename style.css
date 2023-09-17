@@ -18,7 +18,7 @@ html,body{
 }
 
 #center{
-    height: 100%;
+    height: 100vh;
     width: 100%;
     position: absolute;
     top: 50%;
@@ -33,43 +33,41 @@ html,body{
     width: 400px;
     /* background-color: yellowgreen; */
     position: absolute;
-    overflow: hidden;
+    /* overflow: hidden; */
     
 }
 
 .imagediv img{
     position: absolute;
-   top: 10%;
-   left: 10%;
+   top: -20%;
+   left: 0%;
     height: 220px;
     width: 180px;
     object-fit: cover;
     /* transform: translateY(100%); */
     animation-name: anime;
-    animation-duration: 2s;
+    animation-duration: 1s;
+    transition: all ease;
     /* animation-delay: 0.5s; */
     
 }
 
 @keyframes anime {
     0%{
-        transform: translateY(100%);
+        transform: translateY(20%);
     }
     50%{
-    transform: translateY(0%);
+    transform: translateY(-50%);
     /* transform: rotate(340deg); */
 
     }
     100%{
-        /* transform: rotate(340deg); */
-        animation-delay: 1s;
-
-        transform: translateY(100%);
+        transform: translateY(0%);
     }
 }
 
 #mid{
-    height: 100%;
+    height: 100vh;
     width: 100%;
     padding: 10vw 15vw;
     background-color: cadetblue;
@@ -92,3 +90,22 @@ span{
 }
 
 
+@media (max-width:600px) {
+    h1{
+        /* color: royalblue; */
+     position: relative;   
+     top: 40%;
+     font-size: 8vw;
+     font-weight: 600;
+    }
+    .imagediv img{
+        height: 20vh;
+        width: 30vw;
+        border: 2px solid gray;
+    }
+    .imagediv{
+        height: 40vh;
+        width: 70vw;
+        /* background-color: red; */
+    }
+}
